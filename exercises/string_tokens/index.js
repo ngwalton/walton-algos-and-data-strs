@@ -44,6 +44,13 @@
  * in the same order in which it appears in string s.
  **/
 
-function tokenize(s) {}
+function tokenize(s) {
+  const sep = /[^a-z]+/i
+  const tokens = s.split(sep).filter((token) => token.length)
+  const n = tokens.length
+
+  console.log(n)
+  tokens.forEach((token) => console.log(token))
+}
 
 module.exports = tokenize
