@@ -1,7 +1,6 @@
 {
   "root": true,
   "env": {
-    "jest/globals": true,
     "browser": true,
     "commonjs": true,
     "es2021": true
@@ -10,5 +9,22 @@
   "parserOptions": {
     "ecmaVersion": "latest"
   },
+  "overrides": [
+    {
+      "files": ["**/*.test.js"],
+      "plugins": ["jest"],
+      "env": {
+        "jest/globals": true
+      },
+      "extends": ["plugin:jest/recommended"],
+      "rules": {
+        "jest/no-disabled-tests": "warn",
+        "jest/no-focused-tests": "error",
+        "jest/no-identical-title": "error",
+        "jest/prefer-to-have-length": "warn",
+        "jest/valid-expect": "error"
+      }
+    }
+  ],
   "rules": {}
 }
