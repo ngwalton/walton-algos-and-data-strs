@@ -4,6 +4,7 @@
   "description": "Repo for me to keep random algorithm and data structure practice questions and my answers.",
   "main": "index.js",
   "scripts": {
+    "test": "jest --coverage",
     "lint": "npm run prettier:write && npm run eslint:fix",
     "eslint": "eslint .",
     "eslint:fix": "eslint --fix .",
