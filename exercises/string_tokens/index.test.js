@@ -28,6 +28,20 @@ test('Calling tokenize with `s` prints out the correct values', () => {
   expect(console.log.mock.calls).toHaveLength(11)
 })
 
+test('tokenize prints out the correct values with embedded numbers', () => {
+  const s = 'Happy, happy1, j0y, j0y!'
+  tokenize(s)
+
+  expect(console.log.mock.calls[0][0]).toEqual(6)
+  expect(console.log.mock.calls[1][0]).toEqual('Happy')
+  expect(console.log.mock.calls[2][0]).toEqual('happy')
+  expect(console.log.mock.calls[3][0]).toEqual('j')
+  expect(console.log.mock.calls[4][0]).toEqual('y')
+  expect(console.log.mock.calls[5][0]).toEqual('j')
+  expect(console.log.mock.calls[6][0]).toEqual('y')
+  expect(console.log.mock.calls).toHaveLength(7)
+})
+
 beforeEach(() => {
   jest.spyOn(console, 'log')
 })
