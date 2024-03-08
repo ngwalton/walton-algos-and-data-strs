@@ -1,0 +1,19 @@
+{
+  "name": "walton-algos-and-data-strs",
+  "version": "1.0.0",
+  "description": "Repo for me to keep random algorithm and data structure practice questions and my answers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngwalton/walton-algos-and-data-strs.git"
+  },
+  "author": "Nicholas Walton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ngwalton/walton-algos-and-data-strs/issues"
+  },
+  "homepage": "https://github.com/ngwalton/walton-algos-and-data-strs#readme"
+}
