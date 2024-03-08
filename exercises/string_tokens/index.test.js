@@ -7,7 +7,7 @@ test('tokenize function is defined', () => {
 test('Calling tokenize with `Hello world!` prints out 3 statements', () => {
   tokenize('Hello world!')
 
-  expect(console.log.mock.calls.length).toEqual(3)
+  expect(console.log.mock.calls).toHaveLength(3)
 })
 
 test('Calling tokenize with `s` prints out the correct values', () => {
@@ -25,7 +25,7 @@ test('Calling tokenize with `s` prints out the correct values', () => {
   expect(console.log.mock.calls[8][0]).toEqual('isn')
   expect(console.log.mock.calls[9][0]).toEqual('t')
   expect(console.log.mock.calls[10][0]).toEqual('he')
-  expect(console.log.mock.calls.length).toEqual(11)
+  expect(console.log.mock.calls).toHaveLength(11)
 })
 
 beforeEach(() => {
