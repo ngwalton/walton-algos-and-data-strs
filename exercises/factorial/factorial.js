@@ -17,4 +17,13 @@ function factorial(n) {
 //   return result
 // }
 
+// function factorial(n) {
+//   return n < 2
+//     ? 1
+//     : Array(n)
+//         .fill(1)
+//         .map((one, i) => i + one)
+//         .reduce((acc, i) => acc * i, 1)
+// }
+
 module.exports = factorial
