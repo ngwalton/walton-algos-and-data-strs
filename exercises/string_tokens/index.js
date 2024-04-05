@@ -46,7 +46,7 @@
 
 function tokenize(s) {
   const sep = /[^a-z]+/i
-  const tokens = s.split(sep).filter((token) => token.length)
+  const tokens = s.split(sep).filter((token) => token)
   const n = tokens.length
 
   console.log(n)
