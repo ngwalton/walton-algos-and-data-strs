@@ -16,7 +16,7 @@
 // recipe and available are both objects
 function batches(recipe, available) {
   const minRatio = Object.keys(recipe).reduce(
-    (min, k) => Math.min(available[k] / recipe[k], min) || 0,
+    (min, item) => Math.min(available[item] / recipe[item], min) || 0,
     Infinity,
   )
 
