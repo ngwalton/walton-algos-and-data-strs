@@ -4,7 +4,7 @@
 // this data type yet
 
 function factorial(n) {
-  return [0, 1].includes(n) ? 1 : n * factorial(n - 1)
+  return n < 2 ? 1 : n * factorial(n - 1)
 }
 
 // function factorial(n) {
