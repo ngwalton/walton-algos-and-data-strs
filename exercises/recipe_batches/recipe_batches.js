@@ -25,8 +25,8 @@ function batches(recipe, available) {
 
 // recipe and available are both objects
 // function batches(recipe, available) {
-//   const ratios = Object.entries(recipe).map(
-//     ([ingredient, amount]) => Math.floor(available[ingredient] / amount) || 0,
+//   const ratios = Object.keys(recipe).map(
+//     (item) => Math.floor(available[item] / recipe[item]) || 0,
 //   )
 
 //   return Math.min(...ratios)
